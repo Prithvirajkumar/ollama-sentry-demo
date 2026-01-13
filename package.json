@@ -1,0 +1,33 @@
+{
+  "name": "ollama-ecommerce-agent",
+  "version": "1.0.0",
+  "description": "Ollama AI agent with Sentry instrumentation for ecommerce order placement",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "ollama",
+    "ai-agent",
+    "sentry",
+    "ecommerce"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^8.44.0",
+    "@sentry/profiling-node": "^8.44.0",
+    "ollama": "^0.5.9",
+    "dotenv": "^16.4.7",
+    "undici": "^6.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
+
